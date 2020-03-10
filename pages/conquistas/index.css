@@ -1,0 +1,92 @@
+*{
+    margin: none;
+    padding: none;
+}
+body{
+    margin: 0;
+    padding: none;
+    background-color: #e1e1e1;
+}
+
+header{
+    background-color: #3d50f8;
+    margin: none;
+    color: white;
+    font-family: -Roboto, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header span{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 25px 0 25px 25px;
+    padding: 5px 15px;
+    border: 2px solid white;
+}
+
+header ul{
+    list-style: none;
+    margin-right: 100px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul li{
+    margin: 0 40px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+    transition: 0.3s;
+}
+header ul li::after{
+    content: "";
+    background: white;
+    position: absolute;
+    top: 99.9%;
+    right: 100%;
+    height: 15px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+header ul li:hover{
+    color: white;
+}
+header ul li:hover::after{
+    transform: translate(100%, 0);
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.thisPage{
+    color: white;
+    cursor: default;
+}
+.thisPage a{
+    cursor: default;
+
+}
+.thisPage::after{
+    transform: translate(100%, 0);
+}
+
+#content{
+    margin: 25px;
+    padding: 25px;
+    background: white;
+    border: solid #182de7;
+    border-radius: 30px;
+    display: flex;
+    align-items: stretch;
+}
