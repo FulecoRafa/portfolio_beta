@@ -88,6 +88,7 @@ header a{
     border-radius: 30px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: stretch;
 }
 
@@ -118,7 +119,6 @@ header a{
 }
 .cardImg img{
     position: absolute;
-    width: 250px;
     height: 200px;
     left: 50%;
     transform: translate(-50%, 0);
